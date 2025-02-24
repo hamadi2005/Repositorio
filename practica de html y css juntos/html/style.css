@@ -1,0 +1,230 @@
+/*estilo generar*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #100843;
+  }
+  
+  header {
+    background:#100843;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  /*parte de prencipal*/
+  #inicio {
+    background:#100843;
+    padding: 100px 0;
+    color: #fff;
+  }
+  
+  .container-inicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Contenedor de la foto de perfil */
+  .foto-perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #100843;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+  }
+  
+  /* Estilos para la imagen dentro del círculo */
+  .foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Estilos para el texto de inicio */
+  .texto-inicio {
+    text-align: left;
+  }
+  
+  .texto-inicio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .texto-inicio p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el botón */
+  .btn {
+    background: #1061a9;
+    color: #fff;;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container-inicio {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .texto-inicio {
+      text-align: center;
+    }
+  
+    .foto-perfil {
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+/* parte sobre mi*/
+.sobre_mi {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.imagen {
+    width: 45vw;
+    height: 60vh;
+}
+.sobre_mi_informacion {
+    grid-column: 5/10;
+    padding: 3em;
+
+}
+.sobre_mi_informacion h2 {
+    font-size: 2em;
+    color:#191c32 ;
+}
+.sobre_mi p {
+    margin-bottom: 1em;
+}
+/* SECCION DE PROYECTOS*/
+#proyectos {
+    background:#100843;
+    color: #fff;
+    padding: 50px 0;
+  }
+  #proyectos h2 {
+    text-align: center;
+  }
+  
+  .proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .proyecto ,.proyecto2 {
+    background: #100843;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .proyecto img {
+    max-width: 80%;
+    border-radius: 5px;
+  }
+  /* Estilo general para las listas */
+ul {
+  list-style-type: disc; /* Puntos (viñetas) por defecto */
+  padding-left: 20px; /* Espacio para que las viñetas no estén pegadas al borde */
+}
+
+/* Si quieres personalizar el estilo de las viñetas */
+ ul li {
+  list-style-type: disc; /* Puntos clásicos */
+  margin-bottom: 8px; /* Espacio entre elementos de la lista */
+  color:#100843; /* Color del texto */
+}
+
+/* Si prefieres otro tipo de viñeta, como círculos o cuadrados */
+.proyecto ul li.circle {
+  list-style-type: circle; /* Círculos vacíos */
+  }
+  li a {
+    color: aliceblue;
+  }
+  .proyecto2 img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+/*SECCION DE COMENTARIO*/
+#contacto {
+    background: #fff;
+    padding: 50px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 5px;
+  }
+  
+  form input, form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background:#100843;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Pie de página */
+  footer {
+    background:#100843;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  

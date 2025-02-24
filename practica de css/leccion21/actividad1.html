@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Efectos</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, transform 0.3s ease; /* Transición suave para bordes y tamaño */
+}
+
+.campo input:focus {
+    border-color: transparent; /* Desvanece el borde */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+.boton-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.boton-enviar:hover {
+    background-color: transparent; /* Pierde el color de fondo */
+    color: #333;
+    border: 2px solid #333;
+}
+
+    </style>
+</head>
+<body>
+    <form class="formulario">
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+        </div>
+        <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono" placeholder="Ingresa tu teléfono">
+        </div>
+        <button type="submit" class="boton-enviar">Enviar</button>
+    </form>
+</body>
+</html>
