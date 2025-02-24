@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen con Filtro</title>
+    <style>
+        .image-container {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            transition: filter 0.3s ease;
+        }
+
+        .image-container img:hover {
+            filter: sepia(100%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagen con filtro de escala de grises taca la para verlo</h1>
+    <div class="image-container">
+        <img src="Imagen de WhatsApp 2025-02-14 a las 16.38.33_e837ef43.jpg" alt="Imagen ">
+    </div>
+</body>
+</html>

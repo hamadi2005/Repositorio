@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeón - Atrapa al Monstruo</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.acordeon {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.acordeon-item {
+    border: 2px solid #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.acordeon-header {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    border-bottom: 2px solid #444;
+}
+
+.acordeon-content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+}
+
+.acordeon-item.open .acordeon-content {
+    padding: 15px;
+    max-height: 200px; /* Ajusta este valor según el contenido */
+}
+    </style>
+</head>
+<body>
+    <div class="acordeon">
+        <div class="acordeon-item">
+            <div class="acordeon-header">Sección 1</div>
+            <div class="acordeon-content">
+                <p>Contenido de la sección 1. ¡Atrapa al monstruo!</p>
+            </div>
+        </div>
+        <div class="acordeon-item">
+            <div class="acordeon-header">Sección 2</div>
+            <div class="acordeon-content">
+                <p>Contenido de la sección 2. ¡El monstruo está aquí!</p>
+            </div>
+        </div>
+        <div class="acordeon-item">
+            <div class="acordeon-header">Sección 3</div>
+            <div class="acordeon-content">
+                <p>Contenido de la sección 3. ¡El monstruo ha sido atrapado!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.acordeon-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.parentElement.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
