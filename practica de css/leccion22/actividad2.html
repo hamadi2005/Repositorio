@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noria Giratoria</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB; /* Color de fondo celeste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.noria {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.base {
+    width: 20px;
+    height: 150px;
+    background-color: #654321; /* Color marrón para la base */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rueda {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #654321; /* Color marrón para la rueda */
+    border-radius: 50%;
+    position: absolute;
+    animation: rotar 10s linear infinite; /* Animación de rotación */
+}
+
+.cabina {
+    width: 40px;
+    height: 40px;
+    background-color: #ffcc00; /* Color amarillo para las cabinas */
+    border: 2px solid #654321; /* Borde marrón */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(calc(360deg / 6 * var(--i))) translateY(-150px);
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="noria">
+        <div class="base"></div>
+        <div class="rueda">
+            <div class="cabina" style="--i:1;"></div>
+            <div class="cabina" style="--i:2;"></div>
+            <div class="cabina" style="--i:3;"></div>
+            <div class="cabina" style="--i:4;"></div>
+            <div class="cabina" style="--i:5;"></div>
+            <div class="cabina" style="--i:6;"></div>
+        </div>
+    </div>
+</body>
+</html>
