@@ -1,0 +1,32 @@
+body {
+    background-color: white;
+}
+section {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+a {
+    color: blue;
+}
+h1 {
+    text-align: center;
+    background-color: orange;
+    padding: 10px 20px;
+    height: 60px;
+    border-radius: 20px;
+}
+h3 {
+    background-color: rgb(213, 143, 13);
+    border-radius: 20px;
+    padding: 10px 20px  ;
+}
+
+.I {
+    
+    border-radius: 50px;
+}

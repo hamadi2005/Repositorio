@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Noria y Cookies</title>
+  <style>
+    body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.noria {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #333;
+  border-radius: 50%;
+  position: relative;
+  animation: girar 10s linear infinite;
+}
+
+.asiento {
+  width: 30px;
+  height: 10px;
+  background-color: #f00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.asiento:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg) translate(90px); }
+.asiento:nth-child(2) { transform: translate(-50%, -50%) rotate(90deg) translate(90px); }
+.asiento:nth-child(3) { transform: translate(-50%, -50%) rotate(180deg) translate(90px); }
+.asiento:nth-child(4) { transform: translate(-50%, -50%) rotate(270deg) translate(90px); }
+
+
+
+.cookies-banner {
+  background-color: #eee;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: none; /* Oculto inicialmente */
+  animation: aparecer 1s ease-in-out forwards;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="noria">
+    <div class="asiento"></div>
+    <div class="asiento"></div>
+    <div class="asiento"></div>
+    <div class="asiento"></div>
+  </div>
+
+  <div class="cookies-banner">
+    <p>Este sitio web utiliza cookies para mejorar tu experiencia.</p>
+    <button id="aceptar-cookies">Aceptar</button>
+  </div>
+</body>
+</html>

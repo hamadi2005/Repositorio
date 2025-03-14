@@ -63,7 +63,17 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
   }
-  
+  .PULSA {
+    color: #ccc;
+    font-family: cursive;
+    
+  }
+  * {
+    text-align: center;
+  }
+  img {
+    border: 2px solid black;
+  }
   /* Estilos para la imagen dentro del círculo */
   .foto-perfil img {
     width: 100%;
